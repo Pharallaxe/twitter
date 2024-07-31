@@ -14,10 +14,8 @@ class MessageCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.network(
-                    "https://avatar.iran.liara.run/public",
-                    width: 96,
-                  ),
+                  Image.asset("image_demo.jpg", width: 75),
+
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
