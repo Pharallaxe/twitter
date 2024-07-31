@@ -4,6 +4,8 @@ import 'package:twitter/TP_01//footer.dart';
 import 'package:twitter/TP_01//header.dart';
 import 'package:twitter/TP_01//message-card.dart';
 
+import 'auth-page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,8 +22,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         appBarTheme: AppTheme.appBarTheme,
+
       ),
-      home: MyHomePage(),
+      initialRoute: "/",
+      routes: {
+        "/" : (context) => AuthPage(),
+        "/messages" : (context) => MyHomePage()
+      },
     );
   }
 }
